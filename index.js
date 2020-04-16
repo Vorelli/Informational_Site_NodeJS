@@ -27,7 +27,6 @@ fs.readFile('404.html', function(err, data) {
 
 http.createServer(function(req, res) {
 	let q = url.parse(req.url, true);
-	console.log(q.pathname=="/about");
 	switch(q.pathname) {
 		case "/":
 		case "":
